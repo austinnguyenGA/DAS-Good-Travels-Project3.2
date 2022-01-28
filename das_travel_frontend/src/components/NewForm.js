@@ -26,7 +26,8 @@ export default class NewForm extends Component {
       body: JSON.stringify({name: this.state.name}),
       headers: {
         'Content-Type': 'application/json'
-      },
+      }, 
+      credentials:"include"
     }).then( res => {
       return res.json()
     }).then( data => {
