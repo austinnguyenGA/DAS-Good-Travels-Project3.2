@@ -203,19 +203,12 @@ register = (e) => {
 
   render () {
     return (
-      <div className="App">
+      <div className="Travel">
         {/* <Nav loginUser={this.loginUser}
-<<<<<<< HEAD
-        register={this.register} />
-        <h1>Travel Celebrate</h1> */}
+        register={this.register} /> */}
+        <h1>Traveling</h1>
         <NewForm baseUrl={baseUrl}
         addTravel={this.addTravel} />
-=======
-        register={this.register} /> */}
-        <h1>Travel Celebrate</h1>
-        {/* <NewForm baseUrl={baseUrl}
-        addTravel={this.addTravel} /> */}
->>>>>>> 4ec2f0c (Nav bar works, updated package json)
         <table>
           <tbody>
             {this.state.travels.map((travel, i) => {
