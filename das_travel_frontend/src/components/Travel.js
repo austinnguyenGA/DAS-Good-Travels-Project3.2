@@ -7,7 +7,7 @@ import NewForm from './NewForm'
 
 
 
-let baseUrl = 'http://localhost:3003'
+let baseUrl = process.env.REACT_APP_BASEURL
 
 class App extends Component {
   constructor(props){
@@ -218,6 +218,7 @@ register = (e) => {
                   <td >{travel.description}</td>
                   <td >{travel.likes}</td>
                   <td onClick= {() => this.addLike(travel)}>Like</td>
+                  <td onClick= {() => this.deleteTravel(travel._id)}>X</td>
                   {/* <td onClick= {() => this.showEditForm(travel)}>Edit this Travel</td> */}
                 </tr>
               )

@@ -1,8 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import { Nav, Navbar } from 'react-bootstrap'
 
-
+function handleClick() {
+  
+}
 function App() {
+  
   return (
     <div className="Nav">
       <Navbar bg="info" varient="dark"
