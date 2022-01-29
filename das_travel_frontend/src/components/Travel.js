@@ -66,7 +66,7 @@ register = (e) => {
 
   getTravel = () => { //goes back to homepage
 
-    fetch(baseUrl + '/travels', {
+    fetch(baseUrl + "/travels", {
       credentials: "include"
     })
     .then(res => {

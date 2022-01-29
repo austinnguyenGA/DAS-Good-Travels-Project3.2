@@ -21,16 +21,16 @@ export default class NewForm extends Component {
     event.preventDefault()
     console.log(this.props.baseUrl)
     // fetch to the backend
-    fetch(this.props.baseUrl + '/travels', {
+    fetch(this.props.baseUrl + "/travels", {
       method: 'POST',
       body: JSON.stringify({name: this.state.name}),
       headers: {
         'Content-Type': 'application/json'
       }, 
-      credentials:"include"
-    }).then( res => {
+      credentials: 'include'
+    }).then(res => {
       return res.json()
-    }).then( data => {
+    }).then(data => {
       //console.log(data)
       this.props.addTravel(data)
       this.setState({
